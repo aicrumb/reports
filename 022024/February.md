@@ -24,7 +24,7 @@ sweet right, takes forever to train though, dont do this, the glort2 model is a 
 
 #### Ask Mistral *(part 1/15)*
 
-I took a shard of the raw deduplicated Pile dataset and did a heavy filtering with a custom ask-llm ([“How to Train Data-Efficient LLMs”](https://arxiv.org/abs/2402.09668)) implementation with [mistralai/Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2), which took it down to 1.38 billion tokens. Trained some generic ~100m modern transformer decoder models to see how it compares
+I took a shard of the raw deduplicated Pile dataset and did a heavy filtering (taking roughly the top 1/8th) with a custom ask-llm ([“How to Train Data-Efficient LLMs”](https://arxiv.org/abs/2402.09668)) implementation with [mistralai/Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2), which took it down to 1.38 billion tokens. Trained some generic ~100m modern transformer decoder models to see how it compares
 
 | data source | arc-c @ 25     | truthfulqa @ 0 | winogrande @ 5 | hellaswag @ 10 | mmlu @ 5       | gsm8k @ 5     | mean           |
 | ----------- | -------------- | -------------- | -------------- | -------------- | -------------- | ------------- | -------------- |
